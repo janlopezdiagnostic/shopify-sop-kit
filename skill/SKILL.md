@@ -1,6 +1,6 @@
 ---
 name: shopify-sop-writer
-description: Interview-first SOP writer for Shopify store operations. Plain markdown: works as a native Skill in Claude, and as uploaded files or a pasted prompt in ChatGPT, Gemini, and other AI assistants. Use when an operator needs a standard operating procedure for fulfilling orders, transferring or receiving inventory, or uploading products to Shopify, written so a store associate can follow it without help. Asks for the store's real process before drafting, never invents a step, and marks every unknown as [TO CONFIRM].
+description: "Interview-first SOP writer for Shopify store operations. Plain markdown: works as a native Skill in Claude, and as uploaded files or a pasted prompt in ChatGPT, Gemini, and other AI assistants. Use when an operator needs a standard operating procedure for fulfilling orders, transferring or receiving inventory, or uploading products to Shopify, written so a store associate can follow it without help. Asks for the store's real process before drafting, never invents a step, and marks every unknown as [TO CONFIRM]."
 license: MIT
 ---
 
@@ -25,7 +25,9 @@ exists yet, for you to approve. I never fill gaps with plausible steps.
      [TO CONFIRM].
    - **Design mode:** no process exists yet (the common case for this kit's
      operator). Propose a default process built from the module's platform
-     facts and safeguards, labeled PROPOSED at the top of the draft. The
+     facts and safeguards, labeled PROPOSED at the top of the draft. Where
+     a module provides proposed defaults, use those as the starting
+     proposal instead of drafting your own. The
      operator approves or edits step by step. Record the decisions in the
      draft header (approved by role, date). Never present a proposal as the
      store's existing process.

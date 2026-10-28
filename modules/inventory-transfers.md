@@ -9,7 +9,8 @@ A transfer is not one action. It is stock moving through states, and each
 action the associate takes has a different, specific effect on the numbers.
 An SOP that says "transfer the items and receive them" without the states is
 how inventory counts quietly rot. Receiving supplier stock is now done on a
-transfer linked to the purchase order (changed June 2026), so older
+transfer linked to the purchase order (Shopify moved supplier
+receiving onto transfers in 2026; see docs/grounding.md), so older
 instructions that say "receive the PO" are stale.
 
 ## The states (Shopify's own definitions)
@@ -39,8 +40,10 @@ instructions that say "receive the PO" are stale.
      product is not stocked there yet, the receiver chooses whether to stock
      and fulfill from that location or not now.
    - **Reject** records the rejection and changes **no quantities at all**.
-     Rejected items do not go back automatically. The SOP must say what
-     physically happens to them, from the interview.
+     The rejected quantity is then accounted for: it does not stay Incoming
+     and needs no second action. Rejected items do not go back
+     automatically. The SOP must say what physically happens to them, from
+     the interview.
    - **Cancel** is for stock that never shipped. On an inter-location
      transfer the quantity returns to Available at the origin. On a supplier
      transfer it simply removes the expectation.
@@ -51,6 +54,9 @@ instructions that say "receive the PO" are stale.
 
 - The purchase order is the commercial agreement. The **linked transfer** is
   the receiving document. One linked transfer at a time per PO.
+- Two supplier routes exist. Use the PO-linked transfer whenever a purchase
+  order exists. A manual transfer with a blank origin is for supplier stock
+  that is not tied to a purchase order.
 - Receive against the transfer in admin or in POS, counting against the PO
   quantities.
 - This is the flow the product intake SOP uses: see

@@ -18,6 +18,8 @@ Sample data rule: if an example needs a product, it is a plainly generic one
 ("Example Product, size M, invented SKU EX-1001"), never a lightly disguised
 real one.
 
-Before anything from this repo is shared publicly, run a scrub pass: search
-the full text for names and identifiers from the source material, and have
-the operator approve the final wording of anything derived from their drafts.
+Standing rule for anything added later: before new material derived from a
+real operator's work is committed, run a scrub pass over the full text for
+names and identifiers from the source material, and, where the material
+closely follows the operator's own drafts, get the operator's approval of
+the final wording first.

@@ -1,6 +1,6 @@
 # Start here
 
-Five minutes. The kit is plain markdown files, so every path below ends at
+Five minutes to set up. The kit is plain markdown files, so every path below ends at
 the same place: your assistant has the SOP Writer rules, the interview, and
 one workflow module, and you answer questions in your own words.
 
@@ -14,7 +14,8 @@ one workflow module, and you answer questions in your own words.
 3. Paste the starter prompt from `prompt.md`.
 4. Answer the interview like you are explaining the job to a new associate.
    Short answers are fine. "I don't know" is a valid answer. It stays marked
-   [TO CONFIRM] instead of being guessed.
+   [TO CONFIRM] instead of being guessed, unless you are designing a new
+   process, in which case it triggers a proposed default for your approval.
 5. When you get a draft, do not just read it. Hand it to someone who did not
    write it and have them follow it on a real task
    (`templates/follow-it-cold-checklist.md`). Fix what breaks.
@@ -26,7 +27,8 @@ carries the core rules on its own. The modules add the Shopify detail.
 
 - Best: create a Project, add the kit files to the project, and chat inside
   it. Or install the SOP Writer as a Skill from
-  `shopify-sop-writer-skill.zip` on the Releases page.
+  `shopify-sop-writer-skill.zip` on the Releases page (needs a plan with
+  Skills enabled).
 - Optional: if a Shopify connector is available in your Claude plan and
   your workplace allows connecting it, and it can be scoped to read-only,
   it can check real products, orders, and inventory while you draft. The
@@ -36,15 +38,16 @@ carries the core rules on its own. The modules add the Shopify detail.
 ## ChatGPT
 
 - Create a Project and add the kit files, then start the SOP chat inside it.
-  Or upload the three files directly in a normal chat.
+  Or upload the same files directly in a normal chat.
 - A Custom GPT also works (paid plans): paste the body of `skill/SKILL.md`,
   below its frontmatter block, as the GPT's instructions, and add the
-  interview and module files as knowledge files.
+  interview, module, and follow-it-cold checklist files as knowledge files.
 
 ## Gemini
 
-- Create a Gem: paste `skill/SKILL.md` as the Gem's instructions and add the
-  interview and module files as its knowledge. Or upload the files in a
+- Create a Gem: paste the body of `skill/SKILL.md`, below its frontmatter
+  block, as the Gem's instructions, and add the interview, module, and
+  follow-it-cold checklist files as its knowledge. Or upload the files in a
   normal chat and paste the starter prompt.
 
 ## Coding assistants and agents (Cursor, Copilot, Claude Code, others)

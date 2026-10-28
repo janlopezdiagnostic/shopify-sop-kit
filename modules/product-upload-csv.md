@@ -24,15 +24,16 @@ retail associates.
 1. Start from the store's CSV template. One row per product or variant.
 2. Populate from the PO: handle, title, description, vendor, product
    category and type, variant SKU, price, cost per item, variants, and the
-   agreed tags. Type is what the product is (for example: apparel, footwear, home goods);
-   it drives reporting, so it is not optional decoration.
+   agreed tags. Type is what the product is (for example: apparel,
+   footwear, home goods); it drives reporting, so it is not optional
+   decoration.
 3. New products stay **Draft** and unpublished while setup is checked.
    Unreceived inventory is never made sellable.
 4. Leave the CSV's inventory quantity columns out of the intake file (or at
    zero). Stock enters Shopify only through receiving on the transfer
    (section E). Quantities set at import and then received again count the
    same units twice.
-4. Internal barcodes: the ecommerce lead generates and assigns them.
+5. Internal barcodes: the ecommerce lead generates and assigns them.
    [TO CONFIRM: the store's SKU and barcode scheme, and who owns changes.]
 
 ### Channel tags are labels, not controls
@@ -60,7 +61,9 @@ CSV import is the destructive step in this workflow. Verified hazards:
 Pre-flight, every time:
 
 1. Export a backup of the current products first.
-2. Strip the file to only the columns this upload is changing.
+2. When updating existing products, strip the file to only the columns
+   this upload is changing. For new-product intake, use the template's full
+   column set.
 3. Test the import with one product before running the batch.
 4. Check the filename, the preview row, and the product count in the import
    dialog before confirming.
@@ -89,8 +92,9 @@ the CSV comes first.
 
 ## E. Receiving and release for sale
 
-1. When the shipment arrives, receive items on the transfer, entering counted
-   quantities and choosing Accept per item.
+1. When the shipment arrives, receive items on the transfer (in admin, or
+   in POS at a POS Pro location), entering counted quantities and choosing
+   Accept per item.
 2. Count against the PO. Short, over, or damaged quantities follow the
    store's mismatch procedure. [TO CONFIRM: who approves a mismatch and how
    it is recorded.]

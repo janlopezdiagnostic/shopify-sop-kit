@@ -19,9 +19,18 @@ section. Do not quietly blend the two.
 - Fulfillment mode is set in Settings, then General, then "Order processing".
   Manual is the default; automatic and partial modes exist. Older guides that
   point to Checkout settings are stale.
-- Manual flow: open the order, in the "Unfulfilled" or "In progress" section
-  choose "Mark as fulfilled", add tracking and carrier if the label was not
-  bought in Shopify, and choose whether the customer gets a notification.
+- Manual flow, external label: open the order, in the "Unfulfilled" or "In
+  progress" section choose "Mark as fulfilled", add tracking and carrier,
+  and choose whether the customer gets a notification.
+- Manual flow, label bought in Shopify (Shopify Shipping): open the order,
+  choose "Create shipping label" in the Unfulfilled section, pick the
+  service, and buy the label. Buying the label creates the fulfillment: the
+  order moves to Fulfilled and the customer can receive tracking. Do not
+  also "Mark as fulfilled"; that double-processes the order. If a wrong item
+  is found after the label is bought, void the label from the order's
+  Fulfilled section before the package moves. Voiding has conditions (label
+  age, no tracking events yet, carrier rules), so it is a rescue, not a
+  routine step.
 - A 3PL or fulfillment service is a different branch: use "Request
   fulfillment"; the store does not mark those orders fulfilled itself. Custom
   email fulfillment services are emailed when the order is marked fulfilled.
@@ -40,7 +49,13 @@ section. Do not quietly blend the two.
 
 These checks are this kit's designed safeguards, proposed for the operator
 to approve or replace in design mode. They are not a description of a
-process the store already runs. Place them in the SOP as explicit steps:
+process the store already runs. Place them in the SOP as explicit steps.
+Order matters: checks 1 to 4 happen before any label is bought, because a
+bought Shopify label already fulfills the order. Check 5 happens after the
+label prints. Scanning surfaces the item's code on a screen; the check is
+the associate comparing that code to the order line. Where the store has no
+scanner, or an item has no barcode, run the same checks as read-back from
+the item's own label.
 
 1. **Pick by identifier, not by eye.** Pick from the order's SKU or barcode,
    and scan or read back the item code before leaving the shelf. Two products
@@ -55,11 +70,33 @@ process the store already runs. Place them in the SOP as explicit steps:
 4. **Second check at the pack.** Before anything is sealed, compare every
    item in the box against the order lines one more time. This is the last
    cheap moment to catch an error.
-5. **Label check.** After the label prints, match the name and order number
-   on the label to the order on screen before it goes on the box. A correct
-   box with the wrong label is still the wrong shipment.
+5. **Label check.** After the label prints, match the name and address on
+   the label to the order on screen before it goes on the box, and the
+   order number on the packing slip if one is used. A correct box with the
+   wrong label is still the wrong shipment.
+
+## Proposed defaults for design mode (approve or replace)
+
+Where no process exists yet, propose these defaults for the branches below.
+They are proposals from this kit, not the store's current practice:
+
+- **Out of stock, or the shelf race:** never substitute another item. Set
+  the order aside and escalate to the manager role, who decides between a
+  partial shipment and contacting the customer.
+- **Part available, part not:** fulfill the available part only with
+  manager approval, and the customer is told the same day.
+- **On hold:** touch nothing until the hold clears or a manager releases it.
+- **Damaged item:** never ship it. Set it aside, pick a replacement, and
+  record the damaged unit the store's way. [TO CONFIRM: how damaged stock
+  is recorded.]
+- **Address problem:** stop before buying any label. Never guess or correct
+  an address by eye; escalate.
 
 ## Branches the SOP must cover
+
+Cover the branches that match the interview answers. Prune branches for
+setups the store does not have (for example, multi-location branches in a
+single-location store).
 
 - Item out of stock at this location after the order routed here, including
   the shelf race: the last unit was sold in the store between routing and

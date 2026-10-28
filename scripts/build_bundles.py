@@ -3,8 +3,8 @@
 
 Runs scripts/check.py first and refuses to build if it fails.
 - shopify-sop-kit-full.zip: the whole kit, readable anywhere.
-- shopify-sop-kit-core.zip: skill + modules + templates + prompt, the
-  upload set for any AI assistant.
+- shopify-sop-kit-core.zip: the upload set for any AI assistant: the
+  top-level guides, skill, modules, templates, and docs/grounding.md.
 - shopify-sop-writer-skill.zip: a shopify-sop-writer folder holding
   SKILL.md, interview.md, the modules, and the templates, for native Skill
   upload in Claude.
@@ -41,6 +41,7 @@ with zipfile.ZipFile(DIST / "shopify-sop-kit-core.zip", "w", zipfile.ZIP_DEFLATE
         for path in sorted((ROOT / folder).rglob("*")):
             if path.is_file():
                 zf.write(path, str(path.relative_to(ROOT)))
+    zf.write(ROOT / "docs/grounding.md", "docs/grounding.md")
 with zipfile.ZipFile(DIST / "shopify-sop-writer-skill.zip", "w", zipfile.ZIP_DEFLATED) as zf:
     base = "shopify-sop-writer"
     zf.write(ROOT / "skill/SKILL.md", f"{base}/SKILL.md")
@@ -49,5 +50,6 @@ with zipfile.ZipFile(DIST / "shopify-sop-writer-skill.zip", "w", zipfile.ZIP_DEF
         for path in sorted((ROOT / folder).rglob("*")):
             if path.is_file():
                 zf.write(path, f"{base}/{folder}/{path.name}")
+    zf.write(ROOT / "docs/grounding.md", f"{base}/docs/grounding.md")
 
 print("built:", ", ".join(p.name for p in sorted(DIST.glob('*.zip'))))

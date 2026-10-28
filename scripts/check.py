@@ -30,6 +30,15 @@ for path in sorted(ROOT.rglob("*")):
         if term.lower() in text.lower():
             failures.append(f"{rel}: contains a forbidden term (from env)")
 
+for path in sorted(ROOT.rglob("*.md")):
+    if ".git" in path.parts:
+        continue
+    for link in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
+        if link.startswith(("http", "#", "mailto")):
+            continue
+        if not (path.parent / link).resolve().exists():
+            failures.append(f"{path.relative_to(ROOT)}: broken internal link {link}")
+
 if failures:
     print("CHECK FAILED")
     for failure in failures:

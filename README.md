@@ -15,7 +15,7 @@ was built for, and why generic AI-written SOPs fail at it.
 
 ## Status
 
-Version 0.1, working draft. Built from Shopify Help Center documentation
+Version 0.1.1, working draft. Built from Shopify Help Center documentation
 (verified October 2026, sources in [docs/grounding.md](docs/grounding.md)) and
 one real operator's draft SOP and answers, genericized so no store, brand, or
 person is identifiable. See [PRIVACY.md](PRIVACY.md).
@@ -37,13 +37,20 @@ are fixed. Until then, treat every output as a draft.
 - `modules/product-upload-csv.md` - PO to CSV to Shopify PO to transfer to
   received stock, with the CSV pre-flight checks.
 - `templates/` - the SOP template and the follow-it-cold test checklist.
+- `prompt.md` - a self-contained starter prompt that carries the core rules
+  on its own, for assistants where file upload is awkward.
+- `docs/grounding.md` - sources, verification dates, and the open unknowns.
+- `PRIVACY.md` - what never goes into this repo, and the scrub rule.
+- `AGENTS.md` and `CLAUDE.md` - pointers for AI coding assistants working
+  in this repo.
 - `examples/` - empty on purpose. Examples get written from the operator's
   corrected real outputs, not invented.
 
 ## Use it
 
-See [START-HERE.md](START-HERE.md). Short version: upload the files to your
-assistant, paste the starter prompt from `prompt.md`, and answer the
-interview questions in your own words.
+See [START-HERE.md](START-HERE.md). Short version: upload the four files
+START-HERE names, paste the starter prompt from `prompt.md`, and answer the
+interview questions in your own words. Or download a ZIP from the Releases
+page: full kit, core upload set, or the Claude Skill bundle.
 
 Free under the MIT license. Feedback by GitHub Issues only.

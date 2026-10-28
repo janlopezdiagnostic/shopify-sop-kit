@@ -10,6 +10,9 @@ All opened and verified October 27, 2026.
   processing"; the Help Center URL keeps its legacy checkout-settings slug.)
 - Fulfilling orders, bulk fulfillment, custom and app fulfillment services:
   help.shopify.com/en/manual/fulfillment/fulfilling-orders/
+- Shopify Shipping labels, including voiding a label from the Fulfilled
+  section (which confirms that buying a label creates the fulfillment):
+  help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/managing-labels/voiding-labels
 - Split fulfillment behavior: shopify.dev, split fulfillment orders.
 - Inventory states (on hand, available, committed, incoming):
   help.shopify.com/en/manual/inventory-and-locations/fundamentals/inventory-states
@@ -25,7 +28,11 @@ All opened and verified October 27, 2026.
   help.shopify.com/en/manual/products/import-export/import-products and
   help.shopify.com/en/manual/products/import-export/using-csv
 
-## Recent platform changes baked into the modules
+## Recent platform changes
+
+Recorded from the same verification pass. The modules rely on the
+purchase-order change directly; the rest are recorded so nobody
+reintroduces stale facts from older guides.
 
 - Variant limit is 2,048 per product (was 100), since October 2025. Max 3
   options still applies.
@@ -38,14 +45,15 @@ All opened and verified October 27, 2026.
 
 ## Store facts (from the operator, genericized)
 
-- No SOPs exist yet. The work is creating them, not fixing them.
+- Most SOPs do not exist yet; one product-upload draft does. The work
+  is creating them, not fixing them.
 - Readers and doers are store associates. A good SOP is followable cold.
 - The retail store fulfills its own orders.
 - Costliest named error: shipping the wrong product.
 - Product intake is PO-driven, CSV-based, received at the store, with
   channel classification by tags (labels, not controls).
-- Claude use has not been forbidden. A Shopify connector connection is
-  unconfirmed.
+- AI use at the workplace is unsettled either way. Whether an AI
+  assistant can connect to the store's Shopify is unconfirmed.
 
 ## Open unknowns (never guess these)
 

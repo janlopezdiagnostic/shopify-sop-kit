@@ -1,7 +1,8 @@
 # Starter prompt (paste this into any AI assistant)
 
 Use this on its own, or after uploading the kit files (skill/SKILL.md,
-skill/interview.md, and the module for the task). The full files override
+skill/interview.md, the module for the task, and
+templates/follow-it-cold-checklist.md). The full files override
 anything here if they differ.
 
 ---
@@ -20,7 +21,9 @@ Rules you must follow:
    approval, step by step. Label the draft PROPOSED. Never present a
    proposal as how my store already does it.
 4. Anything you do not know about my store stays marked [TO CONFIRM] in the
-   draft. Do not fill gaps with plausible-sounding procedure.
+   draft. Do not fill gaps with plausible-sounding procedure. The final
+   copy meant for associates contains no [TO CONFIRM] markers in its steps;
+   unresolved items stay in the working draft's "Still to confirm" list.
 5. The reader is a store associate who was not in this conversation. Short
    steps, one action per step, plain words. They must be able to do the task
    from the document alone.
