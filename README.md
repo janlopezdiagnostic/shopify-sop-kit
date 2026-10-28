@@ -1,9 +1,14 @@
 # Shopify SOP Kit
 
-Plain-English instruction files that teach Claude to help a Shopify store
-operator write SOPs an associate can actually follow: fulfilling orders from a
-retail store, transferring and receiving inventory, and uploading products by
-CSV from a vendor purchase order.
+Plain-English instruction files that teach an AI assistant to help a
+Shopify store operator write SOPs an associate can actually follow:
+fulfilling orders from a retail store, transferring and receiving inventory,
+and uploading products by CSV from a vendor purchase order.
+
+Works with Claude, ChatGPT, Gemini, and any other assistant that can read
+uploaded files or follow a pasted prompt. The files are plain markdown.
+Nothing here is locked to one tool: see START-HERE.md for each tool's path,
+or grab the ZIPs from the Releases page and skip the file picking entirely.
 
 Start with [PROBLEM.md](PROBLEM.md). It describes the exact situation this kit
 was built for, and why generic AI-written SOPs fail at it.
@@ -37,8 +42,8 @@ are fixed. Until then, treat every output as a draft.
 
 ## Use it
 
-See [START-HERE.md](START-HERE.md). Short version: upload the files to a
-Claude Project, or paste the starter prompt, and answer the interview
-questions in your own words.
+See [START-HERE.md](START-HERE.md). Short version: upload the files to your
+assistant, paste the starter prompt from `prompt.md`, and answer the
+interview questions in your own words.
 
 Free under the MIT license. Feedback by GitHub Issues only.

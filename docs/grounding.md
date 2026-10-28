@@ -36,7 +36,7 @@ All opened and verified October 27, 2026.
   as a live tool.
 - Products have an Unlisted status alongside Draft, Active, and Archived.
 
-## Store facts (from the operator, October 2026, genericized)
+## Store facts (from the operator, genericized)
 
 - No SOPs exist yet. The work is creating them, not fixing them.
 - Readers and doers are store associates. A good SOP is followable cold.
@@ -54,7 +54,7 @@ All opened and verified October 27, 2026.
   suppliers, or both beyond the PO intake flow.
 - The store's SKU and barcode scheme and its owner.
 - Mismatch approval procedure at receiving.
-- Whether Claude Projects, Skills, or the Shopify connector are permitted
-  and enabled on the operator's work account.
+- Whether AI projects, skills, or a Shopify connection are permitted and
+  enabled on the operator's work accounts.
 - Any claimed "batch fulfillment" limit: a single secondary source mentioned
   one; no primary confirmation was found, so no module states one.

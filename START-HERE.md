@@ -1,31 +1,57 @@
 # Start here
 
-Five minutes, no setup beyond a Claude account.
+Five minutes. The kit is plain markdown files, so every path below ends at
+the same place: your assistant has the SOP Writer rules, the interview, and
+one workflow module, and you answer questions in your own words.
 
-1. Open Claude and start a Project (or a normal chat if Projects are not
-   available to you).
-2. Upload these files: `skill/SKILL.md`, `skill/interview.md`, and the module
-   for the SOP you need from `modules/`.
-3. Paste this starter sentence, in your own words if you prefer:
+## The universal path (works in any AI assistant)
 
-   "Help me write an SOP for [the task]. Ask me your interview questions
-   first, one topic at a time. Do not draft until I have answered. Mark
-   anything you do not know about my store as [TO CONFIRM]."
-
-4. Answer the questions like you would explain the job to a new associate.
-   Short answers are fine. If you do not know an answer, say so. The marker
-   stays in the draft until someone who knows confirms it.
+1. Download the kit ZIP from the Releases page, or copy the files from this
+   repo.
+2. In a new chat, upload four files: `skill/SKILL.md`,
+   `skill/interview.md`, the module for your task from `modules/`, and
+   `templates/follow-it-cold-checklist.md`.
+3. Paste the starter prompt from `prompt.md`.
+4. Answer the interview like you are explaining the job to a new associate.
+   Short answers are fine. "I don't know" is a valid answer. It stays marked
+   [TO CONFIRM] instead of being guessed.
 5. When you get a draft, do not just read it. Hand it to someone who did not
    write it and have them follow it on a real task
    (`templates/follow-it-cold-checklist.md`). Fix what breaks.
 
-## Optional: connecting Shopify
+No file uploads available? Paste the full text of `prompt.md` instead. It
+carries the core rules on its own. The modules add the Shopify detail.
 
-Claude has an official Shopify connector (Settings, then Connectors, then
-Shopify, authorized in your Shopify admin). If your workplace allows it,
-read-only access lets Claude check real products, orders, and inventory while
-you draft. This kit works fully without it, and the SOP Writer never writes
-to a live store either way.
+## Claude
+
+- Best: create a Project, add the kit files to the project, and chat inside
+  it. Or install the SOP Writer as a Skill from
+  `shopify-sop-writer-skill.zip` on the Releases page.
+- Optional: if a Shopify connector is available in your Claude plan and
+  your workplace allows connecting it, and it can be scoped to read-only,
+  it can check real products, orders, and inventory while you draft. The
+  kit works fully without it, and the SOP Writer never writes to a live
+  store either way.
+
+## ChatGPT
+
+- Create a Project and add the kit files, then start the SOP chat inside it.
+  Or upload the three files directly in a normal chat.
+- A Custom GPT also works (paid plans): paste the body of `skill/SKILL.md`,
+  below its frontmatter block, as the GPT's instructions, and add the
+  interview and module files as knowledge files.
+
+## Gemini
+
+- Create a Gem: paste `skill/SKILL.md` as the Gem's instructions and add the
+  interview and module files as its knowledge. Or upload the files in a
+  normal chat and paste the starter prompt.
+
+## Coding assistants and agents (Cursor, Copilot, Claude Code, others)
+
+- Point the tool at this repo. `AGENTS.md` at the root tells the tool which
+  files to read and the constraints to work under. `CLAUDE.md` points to it
+  for tools that look for that filename instead.
 
 ## Privacy
 

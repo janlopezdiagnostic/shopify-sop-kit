@@ -24,7 +24,7 @@ retail associates.
 1. Start from the store's CSV template. One row per product or variant.
 2. Populate from the PO: handle, title, description, vendor, product
    category and type, variant SKU, price, cost per item, variants, and the
-   agreed tags. Type is what the product is (book, jacket, scarf, supplies);
+   agreed tags. Type is what the product is (for example: apparel, footwear, home goods);
    it drives reporting, so it is not optional decoration.
 3. New products stay **Draft** and unpublished while setup is checked.
    Unreceived inventory is never made sellable.
@@ -37,11 +37,11 @@ retail associates.
 
 ### Channel tags are labels, not controls
 
-The store classifies channel with tags such as "Retail Only", "Ecom Only",
-and "Omnichannel", plus a PO tag. Tags classify. They do not publish,
-unpublish, or allocate stock. The SOP must check the actual location
-availability and sales-channel publishing separately, every time.
-[TO CONFIRM: the store's current tag scheme.]
+Many stores classify channel with tags meaning store only, online only, or
+both, plus a tag identifying the purchase order. Tags classify. They do not
+publish, unpublish, or allocate stock. The SOP must check the actual
+location availability and sales-channel publishing separately, every time.
+[TO CONFIRM: the store's current tag names and scheme.]
 
 ## C. Import, with the pre-flight that prevents CSV damage
 
@@ -87,17 +87,17 @@ the CSV comes first.
    move it to in transit. Receiving happens on the transfer, per
    modules/inventory-transfers.md.
 
-## E. Receiving and floor release
+## E. Receiving and release for sale
 
 1. When the shipment arrives, receive items on the transfer, entering counted
    quantities and choosing Accept per item.
 2. Count against the PO. Short, over, or damaged quantities follow the
    store's mismatch procedure. [TO CONFIRM: who approves a mismatch and how
    it is recorded.]
-3. Print and apply barcode labels and any hang tags. Then verify the labels:
+3. Print and apply barcode labels. Then verify the labels:
    scan each printed barcode once and confirm it pulls up the right product
    and variant. A mislabeled item here becomes a wrong-item shipment later.
-4. **Floor release checks, all four, before stock becomes available:**
+4. **Release-for-sale checks, all four, before stock becomes available:**
    - Received quantity matches the PO.
    - Price, SKU, barcode, and variant match the physical item.
    - No damaged or missing units are available for sale.

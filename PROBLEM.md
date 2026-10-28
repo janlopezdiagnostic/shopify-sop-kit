@@ -14,35 +14,37 @@ store associates use to do operational tasks. The three tasks that matter first:
 3. Uploading products into Shopify from a vendor purchase order, by CSV, and
    receiving that stock at the store.
 
-## What is true today (from the operator, in his words where quoted)
+## What is true today (from the operator's answers, paraphrased)
 
-- **There is no established process.** Asked for his main challenge with the
-  current process, he answered: "There is no process creating it." Read both
-  ways, both are true here: most of these SOPs do not exist, and there is no
-  set way of creating them either. One working draft does exist, for product
-  upload (his version 0.3, not yet approved). It is the seed the intake module
-  in this kit was genericized from. The other SOPs start from nothing.
-- **The readers are associates, not managers.** His bar: "Associates are
-  reading the SOPs (someone should be able to read them and figure out how to
-  do the task)." That rules out summaries and anything that assumes the reader
+- **There is no established process.** Asked for the main challenge with
+  the current process, the operator's answer was, in substance, that there
+  is no process for creating these at all. Both readings hold: most of these
+  SOPs do not exist, and there is no set way of creating them either. One
+  working draft does exist, for product upload. The intake module in this
+  kit was genericized from it. The other SOPs start from nothing.
+- **The readers are associates, not managers.** The bar the operator set:
+  an associate reads the SOP and can figure out how to do the task from it,
+  unaided. That rules out summaries and anything that assumes the reader
   already knows the job.
-- **The store fulfills its own orders.** "Our retail store will fulfill the
-  orders." Not a warehouse, not a 3PL workflow.
-- **The error he named is wrong-item shipment.** "It needs to prevent wrong
-  product being shipped." (Our reasoning, not his words: a wrong item shipped
-  means a return, a reshipment, and a customer problem. The checks exist
-  because he named the error.)
+- **The store fulfills its own orders.** The retail store, not a warehouse
+  and not a 3PL, fulfills the orders placed with it.
+- **The error the operator named is wrong-item shipment.** The SOPs exist
+  largely to prevent the wrong product being shipped. (Our reasoning: a
+  wrong item shipped means a return, a reshipment, and a customer problem.
+  The checks exist because the operator named the error.)
 - **Product intake is purchase-order driven.** A store manager orders from
   vendors. The ecommerce lead turns that PO into products in Shopify with a
   CSV, creates the Shopify purchase order, and generates the internal
   barcodes. When the shipment arrives, retail staff receive it against a
-  transfer, count it, and apply barcode labels and hang tags. A mistake early
+  transfer, count it, and apply barcode labels. A mistake early
   in that chain (wrong SKU, wrong price, wrong channel setting) surfaces
   later as wrong stock counts or products visible in a channel they were
   never meant for.
-- **AI is not prohibited, and not set up.** His words: "They never said don't
-  use Claude." Whether his store's Shopify can be connected to Claude is
-  unconfirmed, so nothing in this kit may depend on a live connection.
+- **AI use at the workplace is unsettled, either way.** Nothing the operator
+  shared establishes that AI tools are permitted or forbidden at work, and
+  whether the store's Shopify can be connected to an AI assistant is
+  unconfirmed. Nothing in this kit may depend on a live connection, or on
+  any one AI tool.
 
 ## Why generic AI output does not solve this
 

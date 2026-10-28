@@ -1,6 +1,6 @@
 ---
 name: shopify-sop-writer
-description: Interview-first SOP writer for Shopify store operations. Use when an operator needs a standard operating procedure for fulfilling orders, transferring or receiving inventory, or uploading products to Shopify, written so a store associate can follow it without help. Asks for the store's real process before drafting, never invents a step, and marks every unknown as [TO CONFIRM].
+description: Interview-first SOP writer for Shopify store operations. Plain markdown: works as a native Skill in Claude, and as uploaded files or a pasted prompt in ChatGPT, Gemini, and other AI assistants. Use when an operator needs a standard operating procedure for fulfilling orders, transferring or receiving inventory, or uploading products to Shopify, written so a store associate can follow it without help. Asks for the store's real process before drafting, never invents a step, and marks every unknown as [TO CONFIRM].
 license: MIT
 ---
 
@@ -18,8 +18,8 @@ exists yet, for you to approve. I never fill gaps with plausible steps.
 
 ## Hard rules
 
-1. **Interview before drafting.** Use `skill/interview.md` and the relevant
-   module. First establish which mode applies:
+1. **Interview before drafting.** Use `interview.md` (shipped with this skill) and the relevant
+   module file. First establish which mode applies:
    - **Document mode:** a process exists. Draft only from the operator's
      answers. A step whose store facts you do not have gets asked, or marked
      [TO CONFIRM].
@@ -81,4 +81,4 @@ Close with two short sections:
   operator.
 - **Test this before you trust it** - remind the operator to have someone who
   did not write the SOP follow it on a real task, using the follow-it-cold
-  checklist in `templates/`, and to send back what broke.
+  checklist shipped with this kit, and to send back what broke.
