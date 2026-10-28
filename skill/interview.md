@@ -49,3 +49,23 @@ Questions 2 to 6 are asked in both modes; they define the design.
     type, and which sales channel a product belongs to?
 21. What must be true before a product goes Active and visible: stock
     received and counted, price checked, images, anything else?
+
+## Back of house planning (see modules/back-of-house-planning.md)
+
+22. What are the room's measurements: length, width, ceiling height, door
+    widths? What cannot move (columns, panels, radiators, sinks)?
+23. What has to live in this room: which zones, which equipment, whose
+    stuff? What is in there now that should not be?
+24. How do deliveries arrive: how often, how big (boxes, carts, pallets),
+    through which door, moved with what equipment?
+25. What hurts now: where do people get stuck, where does stock pile up,
+    what takes too long to find or reach?
+26. Walk the current path: from the delivery door, where does stock
+    actually go, step by step, until it is shelved or shipped?
+27. What does a peak day look like: biggest delivery, busiest fulfillment
+    day, seasonal surge? How much more volume than a normal day?
+28. Who else uses this room, and for what? Any shared space, staff-only
+    rules, or customer sightlines to protect?
+29. What are the hard limits: lease or landlord rules, budget, anything
+    that must be decided by someone else (fire code, shelving loads,
+    electrical)?

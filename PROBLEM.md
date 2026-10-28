@@ -74,6 +74,18 @@ An SOP is useful here only if all of these hold:
 5. Each SOP gets tested: someone who did not write it follows it on a real
    task, and what breaks gets fixed before it counts as done.
 
+## The next job (why this kit grows)
+
+The same operator's work does not stop at SOPs. The next task is spatially
+planning the store's back of house: receiving, staging, storage, and the
+pack station. It is the same underlying problem in a new form. The plan has
+to come from the operator's real room, real deliveries, and real pain
+points, or it is generic advice with measurements attached. So the kit
+grows by module, on the same rules: interview first, sourced facts kept
+separate from store facts, proposals labeled, and a physical test (tape
+walk, path trace, peak dry run) before the plan counts as final. See
+modules/back-of-house-planning.md.
+
 ## Non-goals
 
 - Not a general ecommerce course, and not a replacement for Shopify's own

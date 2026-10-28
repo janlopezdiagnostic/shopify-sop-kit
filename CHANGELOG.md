@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.2.0 - 2026-10-28
+
+Module 4: back-of-house spatial planning. The kit now follows the
+operator's work end to end: write the SOPs, then plan the room they run in.
+
+- modules/back-of-house-planning.md: zone plan, flow rules, clearances
+  (guidance labeled as guidance; exit routes sent to professional checks),
+  capacity math with the work shown, and the number rule: every number
+  tagged [MEASURED], [STATED], [GUIDANCE], or [DEFAULT]. A plan is a
+  planning aid, never labeled compliant or safe.
+- templates/layout-planning-worksheet.md: the plan's structure, including
+  a professional-checks list and a decisions log.
+- skill/interview.md: questions 22 to 29 for the planning interview.
+- skill/SKILL.md: spatial planning outputs section; the test for a plan is
+  physical (tape walk, path trace, peak dry run), not follow-it-cold.
+- docs/grounding.md: planning sources and their limits.
+
 ## 0.1.1 - 2026-10-28
 
 Audit fixes, same day. Found by a full re-read, mechanical checks, live

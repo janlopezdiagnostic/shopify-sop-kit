@@ -43,6 +43,25 @@ reintroduces stale facts from older guides.
   as a live tool.
 - Products have an Unlisted status alongside Draft, Active, and Archived.
 
+## Back of house planning sources (researched October 28, 2026)
+
+- Zone and flow practice (receiving at the entry, staging next to
+  receiving, pick face on the route to the floor, quarantine separate from
+  sellable stock, aisles sized for the busiest cart): retail stockroom
+  layout guides (Direct Shop Fittings stockroom layout guide; Rackline
+  back-of-house storage guide). Trade guidance, not standards.
+- Exit routes: OSHA 29 CFR 1910.36(g)(2) (exit access at least 28 inches
+  wide at all points; width also sized to occupant load) and 1910.37(a)(3)
+  (exit routes free and unobstructed, no temporary storage). Regulation
+  text read at osha.gov, October 28, 2026. Local fire code may require
+  more; the module sends all exit-route questions to a professional check.
+- Materials handling: OSHA 29 CFR 1910.176 (safe clearances for the
+  equipment in use, permanent aisles marked, storage stable and secure).
+  OSHA sets no general aisle width; the 36 inch foot-only and 48 to 60
+  inch push-cart figures in the module are published planning guidance
+  (Wolverine Building Group mezzanine floor plan guide; retrieved
+  October 28, 2026), labeled [GUIDANCE], not code.
+
 ## Store facts (from the operator, genericized)
 
 - Most SOPs do not exist yet; one product-upload draft does. The work

@@ -1,6 +1,6 @@
 ---
 name: shopify-sop-writer
-description: "Interview-first SOP writer for Shopify store operations. Plain markdown: works as a native Skill in Claude, and as uploaded files or a pasted prompt in ChatGPT, Gemini, and other AI assistants. Use when an operator needs a standard operating procedure for fulfilling orders, transferring or receiving inventory, or uploading products to Shopify, written so a store associate can follow it without help. Asks for the store's real process before drafting, never invents a step, and marks every unknown as [TO CONFIRM]."
+description: "Interview-first SOP writer for Shopify store operations. Plain markdown: works as a native Skill in Claude, and as uploaded files or a pasted prompt in ChatGPT, Gemini, and other AI assistants. Use when an operator needs a standard operating procedure for fulfilling orders, transferring or receiving inventory, or uploading products to Shopify, written so a store associate can follow it without help, or a measured plan for the store's back-of-house space. Asks for the store's real process before drafting, never invents a step, and marks every unknown as [TO CONFIRM]."
 license: MIT
 ---
 
@@ -67,6 +67,19 @@ exists yet, for you to approve. I never fill gaps with plausible steps.
 6. **If something goes wrong** - the known exceptions and exactly what to do
    for each: stop, fix, or escalate, and to whom (a role, never a name).
 7. **Done means** - how the associate knows the task is complete and correct.
+
+## Spatial planning outputs
+
+When the task is planning the back of house (modules/back-of-house-planning.md),
+the output is not an SOP. It is a plan built on the layout worksheet in
+`templates/`: measured facts, zone plan, flow, capacity math with the work
+shown, a decisions log, and an unknowns list. Every number carries its
+provenance tag ([MEASURED], [STATED], [GUIDANCE], [REGULATION],
+[DEFAULT]). Never label a plan compliant or safe, and end every fire,
+egress, load, or electrical question with a professional check. The test
+is physical: tape walk, path trace, peak dry run. For spatial plans, that
+physical test and the unknowns list replace the SOP endings below
+(follow-it-cold does not apply to a room).
 
 ## Working drafts vs associate copies
 

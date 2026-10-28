@@ -24,7 +24,7 @@ for path in sorted(ROOT.rglob("*")):
     rel = path.relative_to(ROOT)
     if "\u2014" in text or "\u2013" in text:
         failures.append(f"{rel}: contains an em or en dash")
-    for match in re.findall(r"\[(?!TO CONFIRM|NAME THE TASK)[A-Z][A-Z ]{2,}\]", text):
+    for match in re.findall(r"\[(?!TO CONFIRM|NAME THE TASK|MEASURED|STATED|GUIDANCE|REGULATION|DEFAULT)[A-Z][A-Z ]{2,}\]", text):
         failures.append(f"{rel}: unsanctioned bracket marker {match}")
     for term in forbidden:
         if term.lower() in text.lower():

@@ -15,7 +15,7 @@ was built for, and why generic AI-written SOPs fail at it.
 
 ## Status
 
-Version 0.1.1, working draft. Built from Shopify Help Center documentation
+Version 0.2.0, working draft. Built from Shopify Help Center documentation
 (verified October 2026, sources in [docs/grounding.md](docs/grounding.md)) and
 one real operator's draft SOP and answers, genericized so no store, brand, or
 person is identifiable. See [PRIVACY.md](PRIVACY.md).
@@ -36,7 +36,12 @@ are fixed. Until then, treat every output as a draft.
   machine, including purchase-order receiving.
 - `modules/product-upload-csv.md` - PO to CSV to Shopify PO to transfer to
   received stock, with the CSV pre-flight checks.
-- `templates/` - the SOP template and the follow-it-cold test checklist.
+- `modules/back-of-house-planning.md` - planning the stockroom itself:
+  zones, flow, clearances, capacity math with provenance tags, and a
+  physical test (tape walk, path trace, peak dry run). A planning aid, not
+  a floor-plan generator.
+- `templates/` - the SOP template, the follow-it-cold test checklist, and
+  the back-of-house layout planning worksheet.
 - `prompt.md` - a self-contained starter prompt that carries the core rules
   on its own, for assistants where file upload is awkward.
 - `docs/grounding.md` - sources, verification dates, and the open unknowns.
