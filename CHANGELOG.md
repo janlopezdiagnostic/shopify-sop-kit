@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.2.1 - 2026-10-28
+
+Cold start for the planning module. The operator needs nothing prepared:
+no measurements, no floor plan, no answers in advance.
+
+- modules/back-of-house-planning.md: "Start cold" section. Rough inputs
+  (paces, estimates, deliveries described in carts and boxes) are usable
+  for a first draft, tagged as rough, and the tape walk converts them to
+  measured facts before any purchase rests on them. A text-grid zone
+  sketch convention, and default zone shares for a generic single-room
+  back of house, all tagged [DEFAULT].
+- skill/SKILL.md: the spatial section now states the cold-start rule.
+
 ## 0.2.0 - 2026-10-28
 
 Module 4: back-of-house spatial planning. The kit now follows the

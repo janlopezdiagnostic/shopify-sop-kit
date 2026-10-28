@@ -71,7 +71,10 @@ exists yet, for you to approve. I never fill gaps with plausible steps.
 ## Spatial planning outputs
 
 When the task is planning the back of house (modules/back-of-house-planning.md),
-the output is not an SOP. It is a plan built on the layout worksheet in
+the operator starts cold: no measurements or prepared answers are required,
+the interview runs as you go, and rough inputs are allowed in a first draft
+as long as each is tagged and the physical test converts them to measured
+facts before any purchase, build, or move rests on them. The output is not an SOP. It is a plan built on the layout worksheet in
 `templates/`: measured facts, zone plan, flow, capacity math with the work
 shown, a decisions log, and an unknowns list. Every number carries its
 provenance tag ([MEASURED], [STATED], [GUIDANCE], [REGULATION],

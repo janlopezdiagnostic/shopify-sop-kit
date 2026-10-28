@@ -15,7 +15,7 @@ was built for, and why generic AI-written SOPs fail at it.
 
 ## Status
 
-Version 0.2.0, working draft. Built from Shopify Help Center documentation
+Version 0.2.1, working draft. Built from Shopify Help Center documentation
 (verified October 2026, sources in [docs/grounding.md](docs/grounding.md)) and
 one real operator's draft SOP and answers, genericized so no store, brand, or
 person is identifiable. See [PRIVACY.md](PRIVACY.md).
@@ -38,8 +38,10 @@ are fixed. Until then, treat every output as a draft.
   received stock, with the CSV pre-flight checks.
 - `modules/back-of-house-planning.md` - planning the stockroom itself:
   zones, flow, clearances, capacity math with provenance tags, and a
-  physical test (tape walk, path trace, peak dry run). A planning aid, not
-  a floor-plan generator.
+  physical test (tape walk, path trace, peak dry run). Usable cold, with
+  no measurements prepared: the interview runs as you go and rough inputs
+  are tagged until the tape walk replaces them. A planning aid, not a
+  floor-plan generator.
 - `templates/` - the SOP template, the follow-it-cold test checklist, and
   the back-of-house layout planning worksheet.
 - `prompt.md` - a self-contained starter prompt that carries the core rules

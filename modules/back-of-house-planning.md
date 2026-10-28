@@ -30,6 +30,42 @@ Not an SOP. A layout plan document with these parts, in this order:
 9. **Tested:** the tape walk, path trace, and peak dry run, with dates and
    what failed.
 
+## Start cold (no prep, no measurements needed)
+
+This module is usable the moment it is opened. The operator does not need
+measurements, a floor plan, or answers prepared. The assistant interviews
+as it goes, and a first draft plan can be built from rough inputs:
+
+- **Rough dimensions are enough to start.** Paces, "about twelve feet",
+  or the largest cart's width are all acceptable first inputs. Every rough
+  input is tagged [DEFAULT] or [STATED] with its roughness noted, and the
+  tape walk (see The test) converts them to [MEASURED] before any
+  purchase, build, or move rests on them. No decision to buy, build, or
+  move anything may rest on a rough number.
+- **Deliveries can be described, not counted.** "Two carts of boxes, twice
+  a week, biggest in November" is a usable answer, tagged [STATED]. The
+  plan works in the operator's own units (carts, boxes, armfuls) until
+  real counts exist, and any capacity figure derived from rough inputs
+  comes out as a range or a blank, never a point value.
+- **Sketch on a text grid.** The plan includes a simple grid sketch: one
+  character cell is roughly one pace or one cart width, whichever the
+  operator thinks in. Zones are labeled blocks. The grid is a thinking
+  tool, tagged [DEFAULT] as a whole; it is never a scale drawing.
+
+### Default zone shares (starting point only)
+
+For a generic single-room retail back of house, a workable first split of
+floor area is: storage 40%, receiving and staging 20%, circulation and
+aisles 20%, pack and ship 10%, quarantine 5%, supplies 5%. The shares sum
+to 100%. They are not a standard or benchmark, and they set no aisle
+width, clearance, or egress path; those come from the clearances section
+and the professional checks. Every share is [DEFAULT]: a proposal to
+argue with, sized by the interview answers, and replaced by the tape
+walk. Any area worked out from a share shows its arithmetic and stays a
+range until the room is [MEASURED]. If the room also holds an office,
+staff area, or a second function, take its share out of storage first and
+note the trade in the decisions log.
+
 ## The number rule (this module's hard rule)
 
 Spatial planning runs on numbers, and invented numbers get built into
